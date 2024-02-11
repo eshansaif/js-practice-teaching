@@ -14,7 +14,6 @@ function calculate(operator) {
   }
   let plusResult = 0;
   let spanOperator = "";
-  let addition = "";
   if (operator === "+") {
     plusResult = parseFloat(firstNumber.value) + parseFloat(secondNumber.value);
     spanOperator = "+";
@@ -43,6 +42,9 @@ function calculate(operator) {
 
   const plusSpan = document.getElementById("plusSpan");
   plusSpan.innerHTML = `${label} ${firstNumber.value} ${spanOperator} ${secondNumber.value} = ${plusResult}`;
+
+  firstNumber.value = "";
+  secondNumber.value = "";
 }
 
 btnPlus.addEventListener("click", () => {
