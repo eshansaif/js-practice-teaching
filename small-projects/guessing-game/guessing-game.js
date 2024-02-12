@@ -20,5 +20,5 @@ document.write(
   `<h1 style="text-align: center; color: green";> Total number of Won: ${noOfWon} </h1>`
 );
 document.write(
-  `<h1 style="text-align: center; color: green";> Total number of Lost: ${noOfLost} </h1>`
+  `<h1 style="text-align: center; color: red";> Total number of Lost: ${noOfLost} </h1>`
 );
